@@ -1,6 +1,99 @@
+/* Reset sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F5DC;
+  font-family: sans-serif;
+}
+
+/* Header area */
+.header {
+  background-color: #303030;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+}
+
+/* Logo - FA */
+.header .fa-code {
+  color: #028080;
+}
+
+.header a,
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font-size: 12px;
+}
+.navbar__logo {
+  margin-left: 10px;
+}
+.navbar__menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 10px;
+}
+.navbar__menu-item {
+  color: #fff;
+  background-color: #028080;
+  margin: 15px 5px;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+main {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 img {
   height: 200px;
   width: auto;
+}
+
+/* Footer area */
+.footer {
+  background-color: #303030;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+.footer__copyright {
+  color: #028080;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.footer__social {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin-left: 10px;
+}
+.footer__social-item {
+  color: #fff;
+  background-color: #028080;
+  margin: 5px 15px;
+  padding: 8px 10px;
+  border-radius: 50%;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

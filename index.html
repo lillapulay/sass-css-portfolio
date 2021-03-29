@@ -20,22 +20,22 @@
    <script src="https://kit.fontawesome.com/8384e13738.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <header>
-      <nav>
-         <figure><i class="fas fa-code"></i></figure>
-         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Blog</li>
-            <li>Projects</li>
-            <li>Sign Up</li>
+   <header class="header">
+      <nav class="navbar">
+         <figure class="navbar__logo"><i class="fas fa-code fa-2x"></i></figure>
+         <ul class="navbar__menu">
+            <li class="navbar__menu-item"><a href="#personal-information">About</a></li>
+            <li class="navbar__menu-item"><a href="#project-information">Projects</a></li>
+            <li class="navbar__menu-item"><a href="#tech-stack">Tech Stack</a></li>
+            <li class="navbar__menu-item"><a href="#blog-posts">Blog</a></li>
+            <li class="navbar__menu-item"><a href="#contact-information">Sign Up</a></li>
          </ul>
 
       </nav>
    </header>
 
    <main>
-      <section>
+      <section id="personal-information">
          <h1>Personal Information</h1>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Iure voluptatibus impedit tempora error, dolores rerum totam 
@@ -46,7 +46,7 @@
          <p><i class="fas fa-arrow-down"></i></p>
       </section>
 
-      <section>
+      <section id="project-information">
          <h1>Project Information</h1>
          <div>
             <h2>Project 1</h2>
@@ -55,7 +55,7 @@
                quo, harum tenetur magnam nostrum velit at nesciunt itaque 
                voluptatibus voluptatum repellendus odio?
             </p>
-            <button>View</button>
+            <button><a href="#">View</a></button>
          </div>
 
          <div>
@@ -65,7 +65,7 @@
                quo, harum tenetur magnam nostrum velit at nesciunt itaque 
                voluptatibus voluptatum repellendus odio?
             </p>
-            <button>View</button>
+            <button><a href="#">View</a></button>
          </div>
 
          <div>
@@ -75,11 +75,11 @@
                quo, harum tenetur magnam nostrum velit at nesciunt itaque 
                voluptatibus voluptatum repellendus odio?
             </p>
-            <button>View</button>
+            <button><a href="#">View</a></button>
          </div>
       </section>
       
-      <section>
+      <section  id="tech-stack">
          <h1>Tech Stack</h1>
          <ul>
             <li><i class="fab fa-html5"></i></li>
@@ -92,7 +92,7 @@
          </ul>
       </section>
 
-      <section>
+      <section  id="blog-posts">
          <h1>Blog posts</h1>
          <article>
             <img src="assets/images/img-1.jpg">
@@ -103,7 +103,7 @@
                quo, harum tenetur magnam nostrum velit at nesciunt itaque 
                voluptatibus voluptatum repellendus odio?
             </p>
-            <button>Read Blog 1</button>
+            <button><a href="#">Read Blog 1</a></button>
          </article>
 
          <article>
@@ -115,7 +115,7 @@
                quo, harum tenetur magnam nostrum velit at nesciunt itaque 
                voluptatibus voluptatum repellendus odio?
             </p>
-            <button>Read Blog 2</button>
+            <button><a href="#">Read Blog 2</a></button>
          </article>
 
          <article>
@@ -127,11 +127,11 @@
                quo, harum tenetur magnam nostrum velit at nesciunt itaque 
                voluptatibus voluptatum repellendus odio?
             </p>
-            <button>Read Blog 3</button>
+            <button><a href="#">Read Blog 3</a></button>
          </article>
       </section>
 
-      <section>
+      <section  id="contact-information">
          <h1>Submit Contact Information</h1>
          <form>
             <label for="nameField">Name:</label>
@@ -145,12 +145,12 @@
       </section>  
    </main>
 
-   <footer>
-      <div><i class="far fa-copyright"></i> 2021 Lilla Pulay. All Rights Reserved.</div>
-      <ul>
-         <li><i class="fab fa-linkedin-in"></i></li>
-         <li><i class="fab fa-github"></i></li>
-         <li><i class="fab fa-stack-overflow"></i></li>
+   <footer class="footer">
+      <div class="footer__copyright"><i class="far fa-copyright"></i> 2021 Lilla Pulay. All Rights Reserved.</div>
+      <ul class="footer__social">
+         <li class="footer__social-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+         <li class="footer__social-item"><a href="#"><i class="fab fa-github"></i></a></li>
+         <li class="footer__social-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>
       </ul>
 
    </footer>

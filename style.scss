@@ -1,4 +1,105 @@
+$background-color: #F5F5DC;
+$main-color: #028080;
+$button-text: #fff;
+$dark-background: #303030;
+
+/* Reset sizing */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   }
+
+body {
+   background-color: $background-color;
+   font-family: sans-serif;
+}
+
+/* Header area */
+.header {
+   background-color: $dark-background;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 10vh;
+   align-items: center;
+}
+
+/* Logo - FA */
+.header .fa-code {
+   color: $main-color;
+}
+
+.header a,
+.footer a {
+   color: white;
+   text-decoration: none;
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+   font-size: 12px;
+   &__logo {
+      margin-left: 10px;
+   }
+   &__menu {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      margin-right: 10px;
+      &-item {
+         color: $button-text;
+         background-color: $main-color;
+         margin: 15px 5px;
+         padding: 5px 10px;
+         border-radius: 2px;
+      }
+   }
+}
+
+
+main {
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+
 img {
    height: 200px;
    width: auto;
 }
+
+/* Footer area */
+.footer {
+   background-color: $dark-background;   
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 10vh;
+   &__copyright {
+      color: $main-color;
+      font-size: 12px;
+      margin-left: 10px;
+   }
+   &__social {
+      display: flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+      margin-left: 10px;
+      &-item {
+         color: $button-text;
+         background-color: $main-color;
+         margin: 5px 15px;
+         padding: 8px 10px;
+         border-radius: 50%;
+         align-items: center;
+      }
+   }
+}
+
