@@ -60,9 +60,101 @@ main {
   margin-bottom: 100px;
 }
 
-img {
-  height: 200px;
+h1, h2 {
+  color: #028080;
+  text-transform: uppercase;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+/* Personal Information */
+#personal-information {
+  height: 100vh;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+}
+.intro__image {
+  height: 60vh;
   width: auto;
+}
+.intro__text {
+  padding-left: 15px;
+}
+.intro__text-title {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.down-arrow {
+  text-align: center;
+  color: #028080;
+  margin-top: 30px;
+}
+
+/* Project Information */
+.cards {
+  display: flex;
+}
+
+.card {
+  background-color: #D8D8A6;
+}
+
+/* Tech stack */
+.tech__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  color: #fff;
+  border-top: 1px solid #028080;
+  border-bottom: 1px solid #028080;
+  padding: 15px;
+}
+.tech__list-item {
+  background-color: #028080;
+  padding: 8px 20px;
+  border-radius: 2px;
+}
+
+/* Blog posts */
+article {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+img {
+  margin-right: 20px;
+  width: 25rem;
+  height: auto;
+}
+
+/* Contact form */
+.contact {
+  width: 20rem;
+  margin: auto;
+  border: 1px solid #028080;
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea {
+  margin-bottom: 20px;
 }
 
 /* Footer area */
