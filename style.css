@@ -67,15 +67,18 @@ h1, h2 {
 
 h1 {
   text-align: center;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 h2 {
   font-size: 16px;
+  margin-bottom: 1em;
 }
 
 /* Personal Information */
 #personal-information {
-  height: 100vh;
+  height: 80vh;
 }
 
 .intro {
@@ -94,10 +97,11 @@ h2 {
   margin-bottom: 1em;
 }
 
-.down-arrow {
+.down-arrow,
+.down-arrow a {
   text-align: center;
   color: #028080;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 /* Project Information */
@@ -107,6 +111,28 @@ h2 {
 
 .card {
   background-color: #D8D8A6;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.card__title {
+  text-align: left;
+}
+.card__text {
+  margin-bottom: 5em;
+  text-align: justify;
+}
+.card__button {
+  background-color: #D8D8A6;
+  border: 1px solid #028080;
+  border-radius: 2px;
+  padding: 5px 70px;
+  bottom: 2em;
+}
+
+.card__button a {
+  color: #028080;
+  text-decoration: none;
 }
 
 /* Tech stack */
@@ -132,6 +158,27 @@ article {
   margin-bottom: 30px;
 }
 
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blog__button {
+  border: 1px solid #028080;
+  border-radius: 2px;
+  padding: 5px 70px;
+  bottom: 2em;
+  background-color: #F5F5DC;
+  padding: 5px 10px;
+  width: 12em;
+  height: 8em;
+}
+
+.blog__button a {
+  color: #028080;
+  text-decoration: none;
+}
+
 img {
   margin-right: 20px;
   width: 25rem;
@@ -146,15 +193,38 @@ img {
   padding: 30px 60px;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.contact__button {
+  border-radius: 2px;
+  background-color: #028080;
+  color: #fff;
+  border: 1px solid #028080;
+  cursor: pointer;
+  padding: 5px;
+  width: 100px;
+  position: absolute;
+  right: 60px;
+  bottom: 30px;
 }
 
 .contact label {
   margin-bottom: 5px;
+  font-size: 12px;
 }
 
 .contact input,
 .contact textarea {
   margin-bottom: 20px;
+  border-radius: 2px;
+  border: 1px solid #303030;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.contact textarea {
+  resize: none;
+  margin-bottom: 50px;
 }
 
 /* Footer area */

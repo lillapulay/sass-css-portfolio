@@ -74,15 +74,18 @@ h1, h2 {
 
 h1 {   
    text-align: center;
+   margin-bottom: 2em;
+   margin-top: 2em;
 }
 
 h2 {
    font-size: 16px;
+   margin-bottom: 1em;
 }
 
 /* Personal Information */
 #personal-information {
-   height: 100vh;
+   height: 80vh;
 }
 
 .intro {
@@ -101,14 +104,12 @@ h2 {
    }
 }
 
-.down-arrow {
+.down-arrow,
+.down-arrow a {
    text-align: center;
    color: $main-color;
-   margin-top: 30px;
+   margin-top: 50px;
 }
-
-
-
 
 /* Project Information */
 .cards {
@@ -117,6 +118,28 @@ h2 {
 
 .card {
    background-color: $card-color;
+   margin: 10px;
+   padding: 20px;
+   text-align: center;
+   &__title {
+      text-align: left;
+   }
+   &__text {
+      margin-bottom: 5em;
+      text-align: justify;
+   }
+   &__button {
+      background-color: $card-color;
+      border: 1px solid $main-color;
+      border-radius: 2px;
+      padding: 5px 70px;
+      bottom: 2em;
+   }
+}
+
+.card__button a {
+   color: $main-color;
+   text-decoration: none;
 }
 
 /* Tech stack */
@@ -142,9 +165,26 @@ article {
    margin-bottom: 30px;
 }
 
+.blog {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   &__button {
+      border: 1px solid $main-color;
+      border-radius: 2px;
+      padding: 5px 70px;
+      bottom: 2em;
+      background-color: $background-color;
+      padding: 5px 10px;
+      width: 12em;
+      height: 8em;
+   }
+}
 
-
-
+.blog__button a {
+   color: $main-color;
+   text-decoration: none;
+}
 
 img {
    margin-right: 20px;
@@ -160,15 +200,38 @@ img {
    padding: 30px 60px;
    display: flex;
    flex-direction: column;
+   position: relative;
+   &__button {
+      border-radius: 2px;
+      background-color: $main-color;
+      color: $button-text;
+      border: 1px solid $main-color;
+      cursor: pointer;
+      padding: 5px;
+      width: 100px;
+      position: absolute;
+      right: 60px;
+      bottom: 30px;
+   }
 }
 
 .contact label {
    margin-bottom: 5px;
+   font-size: 12px;
 }
 
 .contact input,
 .contact textarea {
    margin-bottom: 20px;
+   border-radius: 2px;
+   border: 1px solid $dark-background;
+   font-size: 12px;
+   padding: 5px;
+}
+
+.contact textarea {
+   resize: none;
+   margin-bottom: 50px;
 }
 
 
