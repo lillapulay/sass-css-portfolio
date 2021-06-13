@@ -1,3 +1,8 @@
+## SASS - CSS portfolio template
+
+Simple design coded following a mockup (image below) for another Integrify assignment.
+***
+
 ## Welcome to CSS and SASS assignment.
 please follow the instructions which you can find in index.html example image below
 
